@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ansh Biswas Dot LIVE</title>
+  <link rel="icon" href="images/9a1d6166c8388ba08ecf77cb7a34f3ce.jpg" type="image/png" />
+
+  <!-- Font Awesome CDN for Instagram icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    iframe {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 50px);
+      border: none;
+      display: block;
+    }
+
+    .top-marquee {
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(90deg, #00f7ff, #1f1c2c);
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      z-index: 9999;
+    }
+
+    .marquee-track {
+      display: flex;
+      white-space: nowrap;
+      animation: scrollLeft 25s linear infinite;
+    }
+
+    .marquee-track span {
+      margin-right: 100px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .top-marquee a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .top-marquee a:hover {
+      color: yellow;
+    }
+
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Sticky Footer Ad Container */
+    .sticky-footer-ad {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 340px;
+      height: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+    }
+
+    .sticky-footer-ad .close-btn {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: #f44336;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      font-size: 14px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .instagram-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #e1306c; /* Instagram pink */
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+      margin-top: 6px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .instagram-button i {
+      margin-right: 8px;
+    }
+
+    .instagram-button:hover {
+      background-color: #b92e5a;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Marquee -->
+  <div class="top-marquee">
+    <div class="marquee-track">
+      <span>
+        |Ansh x Parth Creation |X|Ansh x Parth Creation ||Ansh x Parth Creation
+        |X|Ansh x Parth Creation ||Ansh x Parth Creation ||Ansh x Parth Creation |
+      </span>
+      <span>
+        |Ansh x Parth Creation ||Ansh x Parth Creation ||Ansh x Parth Creation
+        ||Ansh x Parth Creation ||Ansh x Parth Creation ||Ansh x Parth Creation |
+      </span>
+    </div>
+  </div>
+
+  <!-- iFrame Content -->
+  <iframe id="mainContent" src="https://iitschool.cc/" allowfullscreen=""></iframe>
+
+  <!-- Sticky Footer Ad -->
+  <div class="sticky-footer-ad" id="stickyAd">
+    <button class="close-btn" onclick="closeAd()">×</button>
+
+    <script async="" src="js/adsbygoogle.js" crossorigin="anonymous"></script>
+    <ins
+      class="adsbygoogle"
+      style="display:inline-block;width:340px;height:55px"
+      data-ad-client="ca-pub-3435678691456101"
+      data-ad-slot="6778307513"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div style="font-size: 20px; color: #555; margin-top: 6px; text-align: center; width: 100%; display: block;">
+      Powered by Ansh Biswas X Parth Sahu
+    </div>
+
+    <!-- Instagram Follow Button replacing Telegram -->
+    <a
+      href="https://instagram.com/ansh_biswass"
+      target="_blank"
+      class="instagram-button"
+      ><i class="fab fa-instagram"></i> Follow on Insta</a
+    >
+  </div>
+
+  <script>
+    function closeAd() {
+      const ad = document.getElementById('stickyAd');
+      ad.style.display = 'none';
+      setTimeout(() => {
+        ad.style.display = 'flex';
+      }, 10000); // Show again after 10 seconds
+    }
+  </script>
+</body></html>
